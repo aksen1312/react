@@ -1,9 +1,16 @@
 var React = require('react');
+var Catalog = require('../components/app-catalog.js');
+var Cart = require('../components/app-cart.js');
 
 var App = React.createClass({
     render : function(){
         return (
-            <h1>My App!!!!</h1>
+            <div>
+                <h1>Let's Shop</h1>
+                <Catalog />
+                <h1>Cart</h1>
+                <Cart />
+            </div>
         )
     }
 });
